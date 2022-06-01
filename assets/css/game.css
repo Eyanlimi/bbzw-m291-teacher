@@ -1,6 +1,31 @@
 body {
     font-family: "Courier";
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    
+  
+}
+
+.titel{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
   
   #score,
   .highscore {
@@ -14,8 +39,9 @@ body {
   #game {
     width: 600px;
     height: 300px;
-    border: 2px solid black;
+ 
     margin: auto;
+
   }
   
   
@@ -96,3 +122,127 @@ body {
     }
   }
   
+
+  .highscore {
+    margin-bottom: 100px;
+  }
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgrey;
+  
+}
+
+.left {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 30px;
+}
+
+.middle {
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+
+.middle h4 {
+  font-weight: bold;
+
+}
+
+.middle p {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+
+.mehr_foot {
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mehr_foot h4 {
+  font-weight: bold;
+  
+}
+
+.mehr_foot a {
+  
+  font-weight: lighter;
+  font-size: 12px;
+  margin-bottom: 10px;
+  
+}
+
+.mehr_foot p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+.bottom_foot{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+
+
+
+@media screen and (min-width: 1150px ){
+  .footer{
+      flex-direction: row;
+      height: 500px;
+   
+      
+  }
+
+  .middle {
+      margin-left: 200px;
+     
+  }
+
+  .left {
+     justify-content: center;
+     margin-top: 0;
+  }
+
+  .bottom_foot {
+     display: flex;
+     align-items: center;
+  }
+
+
+}
+
+@media screen and (min-width: 740px){
+  .bottom_foot{
+      flex-direction: row;
+  }
+
+  .middle {
+      margin-right: 30px;
+  }
+
+  .mehr_foot {
+      margin-left: 30px;
+  }
+}

@@ -76,6 +76,10 @@ form{
     flex-wrap: wrap;
     
 }
+
+#form {
+    transition: 1s ease-in-out;
+}
 .row {
 display: flex;
 flex-direction: row;

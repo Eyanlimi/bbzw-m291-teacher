@@ -1,6 +1,13 @@
 const submit = document.getElementById("submit")
 const email = document.getElementById("email")
+const fname = document.getElementById("fname")
+const lname = document.getElementById("lname")
+const number = document.getElementById("number")
 submit.disabled = true
+
+
+
+
 
 const validate = () => {
     if (email.value == "") {

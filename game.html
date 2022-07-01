@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/game.css" />
+    <title>Timekeeper Game</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/img/Logo/Logo_2.png" alt="Timekeeper Logo" />
+        </a>
+      </div>
+
+      <div class="title">The Timekeeper</div>
+
+      <div class="linkToShop">
+        <a href="./shop.html">Zum Shop</a>
+      </div>
+    </div>
+
+    <!-- Game Start -->
+
+    <div class="content content-game">
+      <div class="gameRow gameInfo">
+        Weichen Sie den Dieb aus. Klicken Sie, um zu springen.
+      </div>
+
+      <div id="game">
+        <div class="startScreen" id="startScreen">
+          <div class="startScreenText">
+            Klicken Sie, um das Spiel zu starten.
+          </div>
+        </div>
+
+        <div id="background"></div>
+        <div id="dino"></div>
+        <div id="rock"></div>
+        <div id="goodie"></div>
+      </div>
+
+      <div class="gameRow score" id="score">0</div>
+      <div class="gameRow highscore">
+        Highscore <span id="highscore-value">0</span>
+      </div>
+      <div class="gameRow">Goodies <span id="goodies-value">0</span></div>
+
+      <div class="gameRow gameOver" id="gameOver">
+        Glückwunsch, Sie haben den Score von 100 erreicht. Ihr Discountcode
+        lautet: <br />
+        <span class="discountcode">P932CB09</span> <br />
+        <p>
+          <br />
+          <a href="shop.html" class="shopCTA">Zum Shop</a>
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+      <div class="left">
+        <div class="name">
+          <h3>THE TIMEKEEPER</h3>
+        </div>
+        <div class="icons">
+          <img src="assets/img/img/instagram.svg" />
+          <img src="assets/img/img/facebook.svg" />
+          <img src="assets/img/img/twitter.svg" />
+          <img src="assets/img/img/linkedin.svg" />
+        </div>
+      </div>
+
+      <div class="bottom_foot">
+        <div class="middle">
+          <h4>Kontakt</h4>
+          <p>info@timekeeper.ch</p>
+          <p>+41 78 723 83 54</p>
+        </div>
+
+        <div class="mehr_foot">
+          <h4>Mehr</h4>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutzerklärung</a>
+          <p>© Timekeeper 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/game.js"></script>
+  </body>
+</html>

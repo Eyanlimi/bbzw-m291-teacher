@@ -1,0 +1,395 @@
+
+/* Allgemeine Stylings */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Header */
+
+.header {
+  height: 75px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 100%;
+  margin-left: -20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.linkToShop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.linkToShop a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.linkToShop a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Game */
+
+.content {
+  flex: auto;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+
+.gameInfo {
+  margin-bottom: 20px;
+  font-size: smaller;
+}
+
+.gameOver{
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.discountcode {
+  font-size: large;
+  font-weight: bold;
+}
+
+.shopCTA {
+
+  text-decoration: none;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+}
+.shopCTA:hover {
+  background-color: black;
+  color: white;
+}
+
+.content-game {
+  min-height: 800px;
+  font-size: 1.5rem;
+}
+
+#game {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+
+#dino {
+  height: 80px;
+  width: 50px;
+  top: 220px;
+  position: relative;
+  background-image: url("../img/Businessman/1x/Asset\ 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dino-dies {
+  background-color: red;
+
+}
+
+#rock {
+  width: 50px;
+  height: 80px;
+  position: relative;
+  top: 140px;
+  left: 550px;
+  background-image: url("../img/Thief/1x/Asset\ 1.png");
+  background-size: cover;
+}
+
+.rock-animation {
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0% {
+    left: 550px;
+  }
+
+  100% {
+    left: -50px;
+  }
+}
+
+#goodie {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 60px;
+  left: 550px;
+  background-image: url("../img/Watch/SVG/Watch_Final.svg");
+  background-size: cover;
+}
+
+
+.goodie-animation {
+  animation: goodie1 7s infinite;
+}
+
+@keyframes goodie1 {
+  0% {
+    left: 550px;
+    top: 225px;
+  }
+
+  100% {
+    left: -50px;
+    top: 225px;
+  }
+}
+
+@keyframes goodie2 {
+  0% {
+    left: 550px;
+    top: 75px;
+  }
+
+  100% {
+    left: -50px;
+    top: 75px;
+  }
+}
+
+
+
+
+
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+    top: 225px;
+  }
+
+  50% {
+    top: 75px;
+  }
+
+  75% {
+    top: 75px;
+  }
+
+  100% {
+    top: 225px;
+  }
+}
+
+
+
+#background {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  background-image: url("../img/Background/Background_city.jpg");
+  background-size: cover;
+}
+
+.bg-animation {
+  animation: moveBg 10.33s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -600px 0;
+  }
+}
+
+
+.gameRow {
+  text-align: center;
+  margin-top: 20px;
+  padding: 8px;
+}
+
+.gameOver {
+  display: none;
+}
+
+.startScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0.7;
+  background: black
+}
+
+.startScreenText {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-align: center;
+  color: white;
+
+
+}
+
+
+
+/* Footer */ 
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgrey;
+  
+}
+
+.left {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 30px;
+}
+
+.middle {
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+
+.middle h4 {
+  font-weight: bold;
+
+}
+
+.middle p {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+
+.mehr_foot {
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mehr_foot h4 {
+  font-weight: bold;
+  
+}
+
+.mehr_foot a {
+  
+  font-weight: lighter;
+  font-size: 12px;
+  margin-bottom: 10px;
+  
+}
+
+.mehr_foot p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+.bottom_foot{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+
+
+
+@media screen and (min-width: 1150px ){
+  .footer{
+      flex-direction: row;
+      height: 500px;
+   
+      
+  }
+
+  .middle {
+      margin-left: 200px;
+     
+  }
+
+  .left {
+     justify-content: center;
+     margin-top: 0;
+  }
+
+  .bottom_foot {
+     display: flex;
+     align-items: center;
+  }
+
+
+}
+
+@media screen and (min-width: 740px){
+  .bottom_foot{
+      flex-direction: row;
+  }
+
+  .middle {
+      margin-right: 30px;
+  }
+
+  .mehr_foot {
+      margin-left: 30px;
+  }
+}

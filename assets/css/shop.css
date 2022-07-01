@@ -1,0 +1,863 @@
+/* Allgemeine Stylings */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Header */
+
+
+.header {
+  height: 75px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo img {
+  height: 100%;
+  width: 150px;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.linkToShop{
+    width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.linkToShop a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.linkToShop a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Mediaqueries für responsive Header */
+@media screen and (max-width: 940px) {
+ 
+      
+     
+      
+      .title {
+  
+        font-size: 30px;
+    
+      }
+      
+      .linkToShop a {
+        font-size: smaller;
+      }
+   
+}
+
+@media screen and (max-width: 585px) {
+ 
+      
+    .title {
+
+      font-size: 20px;
+  
+    }
+    
+    .linkToShop a {
+        font-size: 15px;
+     
+        color: black;
+        background-color: lightgrey;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      .logo img {
+        height: 100%;
+        width: 150px;
+      
+      }
+ 
+}
+
+@media screen and (max-width: 585px) {
+ 
+    .header {
+        height: 75px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .logo {
+          display: flex;
+          justify-content: center;
+      }
+
+    .title {
+
+      font-size: 20px;
+  
+    }
+
+    .linkToShop{
+        display: none;
+    
+    }
+    
+
+     
+ 
+}
+
+
+
+/* Navigation */
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+
+.navigation {
+  width: 30%;
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Mediaqueries für responsive Navogation */
+
+@media screen and (max-width: 1091px ) {
+    .navigation {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 840px ) {
+    .navigation {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 680px ) {
+    .navigation {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 580px ) {
+    .navigation {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px ) {
+    .navigation {
+        width: 90%;
+    }
+}
+
+
+/* Shop Start */ 
+
+.uebersicht {
+    width: 90%;
+   margin: 0 auto;
+}
+
+.titel {
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+margin-top: 100px;
+}
+
+.container_2 {
+   display: flex;
+   justify-content: center;
+   
+   flex-direction: row;
+   flex-wrap: wrap;
+    margin-bottom: 100px;
+    width: 100%;
+   
+    
+    
+}
+
+
+
+#box_long {
+    display: none;
+}
+
+.box {
+    background-color: white;
+    height: 450px;
+    width: 400px;
+    margin: 0px 20px 0 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:3px 9px 25px #C6C6C6;
+    margin-bottom: 50px;
+
+}
+
+
+.box_img {
+    width: 100%;
+height: 250px;
+background-color: grey;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 15px 15px 0 0;
+}
+
+
+.box_titel {
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: -15px;
+  
+}
+
+.box_titel h2 {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.box_txt {
+    margin: 0px 10px -10px 10px;
+    line-height: 20px;
+    
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.angaben {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   margin-top: 10px;
+}
+
+.waehrung {
+    margin-right: 10px;
+}
+
+.betrag {
+    margin-left: 10px;
+}
+
+/* Mediaqueries für responsive Shop */
+
+
+@media screen and (min-width: 720px) {
+    .box {
+        background-color: white;
+        height: 350px;
+        width: 250px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 50px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    
+    .box_img {
+        width: 100%;
+    height: 200px;
+    background-image: url(../img/Watch5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+ 
+    }
+
+    .box_txt {
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 967px) {
+    
+
+ 
+    #box_dspl_none{
+        display: none;
+    }
+    #box_long {
+     
+        height: 350px;
+        width: 850px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 50px;
+    }
+
+    #box_img_long {
+        height: 350px;
+        width: 100%;
+  
+        background-image: url(../img/Watch5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 0px 0 15px;
+    }
+     #box_inhalt_long {
+         display: flex;
+         flex-direction: column;
+         margin-left: 50px;
+         max-width: 550px;
+     }
+
+     #box_titel_long {
+        margin-left: 10px;
+        margin-right: 10px;
+      
+     }
+
+     #angaben_long {
+         margin-left: 10px;
+         width: 280px;
+         margin-top: 70px;
+         
+     }
+
+     
+}
+
+
+@media screen and (min-width: 1310px){
+    .box {
+        background-color: white;
+        height: 400px;
+        width: 300px;
+        margin: 0px 30px 0 30px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    
+    .box_img {
+        width: 100%;
+    height: 200px;
+    background-image: url(../img/Watch5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+ 
+    }
+
+    .box_txt {
+        margin-bottom: 10px;
+    }
+
+    #box_long {
+     
+        height: 400px;
+        width: 1020px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+
+    #box_img_long {
+        height: 400px;
+        width: 100%;
+  
+        background-image: url(../img/Watch5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 0px 0 15px;
+    }
+
+    #box_inhalt_long {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        max-width: 550px;
+        height: 100%;
+    }
+
+    #box_titel_long {
+       margin-left: 10px;
+       margin-right: 10px;
+    margin-top: 30px;
+    }
+
+    #box_txt_long {
+        margin-top: 30px;
+    }
+
+
+
+    #angaben_long {
+        margin-left: 10px;
+        width: 280px;
+        margin-top: 70px;
+        
+    }
+
+
+}
+
+@media screen and (min-width: 1577px){
+    .box {
+        background-color: white;
+        height: 450px;
+        width: 350px;
+        margin: 0px 30px 0 30px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    
+    .box_img {
+        width: 100%;
+    height: 250px;
+    background-image: url(../img/Watch5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+ 
+    }
+
+    .box_txt {
+        margin-bottom: 10px;
+    }
+
+    #box_long {
+     
+        height: 400px;
+        width: 1170px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+
+    #box_img_long {
+        height: 400px;
+        width: 100%;
+  
+        background-image: url(../img/Watch5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 0px 0 15px;
+    }
+
+    #box_inhalt_long {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        max-width: 550px;
+        height: 100%;
+    }
+
+    #box_titel_long {
+       margin-left: 10px;
+       margin-right: 10px;
+    margin-top: 30px;
+    }
+
+    #box_txt_long {
+        margin-top: 30px;
+    }
+
+
+
+    #angaben_long {
+        margin-left: 10px;
+        width: 280px;
+        margin-top: 70px;
+        
+    }
+
+
+}
+
+
+@media screen and (min-width: 1799px){
+    .box {
+        background-color: white;
+        height: 500px;
+        width: 400px;
+        margin: 0px 30px 0 30px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+    .box p {
+        font-size: 17px;
+    }
+    
+    .box_img {
+        width: 100%;
+    height: 250px;
+    background-image: url(../img/Watch5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 30px;
+ 
+    }
+
+    .box_txt {
+        margin-bottom: 20px;
+        
+    }
+
+    #box_long {
+     
+        height: 500px;
+        width: 1300px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+
+    #box_img_long {
+        height: 500px;
+        width: 100%;
+  
+        background-image: url(../img/Watch5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 0px 0 15px;
+        margin-bottom: 0px;
+    }
+
+    #box_inhalt_long {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        max-width: 550px;
+        height: 100%;
+    }
+
+    #box_titel_long {
+       margin-left: 10px;
+       margin-right: 10px;
+    margin-top: 30px;
+    }
+
+    #box_txt_long {
+        margin-top: 30px;
+    }
+
+
+
+    #angaben_long {
+        margin-left: 10px;
+        width: 280px;
+        margin-top: 100px;
+        
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1920px){
+    .box {
+        background-color: white;
+        height: 550px;
+        width: 450px;
+        margin: 0px 30px 0 30px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+    .box p {
+        font-size: 17px;
+    }
+    
+    .box_img {
+        width: 100%;
+    height: 250px;
+    background-image: url(../img/Watch5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 30px;
+ 
+    }
+
+    .box_txt {
+        margin-bottom: 20px;
+        
+    }
+
+    #box_long {
+     
+        height: 550px;
+        width: 1470px;
+        margin: 0px 20px 0 20px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:3px 9px 25px #C6C6C6;
+        margin-bottom: 150px;
+    }
+
+    #box_img_long {
+        height: 550px;
+        width: 100%;
+  
+        background-image: url(../img/Watch5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 0px 0 15px;
+        margin-bottom: 0px;
+    }
+
+    #box_inhalt_long {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        max-width: 550px;
+        height: 100%;
+    }
+
+    #box_titel_long {
+       margin-left: 10px;
+       margin-right: 10px;
+    margin-top: 30px;
+    }
+
+    #box_txt_long {
+        margin-top: 30px;
+    }
+
+
+
+    #angaben_long {
+        margin-left: 10px;
+        width: 280px;
+        margin-top: 100px;
+        
+    }
+
+
+}
+
+
+
+
+/* Shop End */ 
+
+
+/* Footer */
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    
+  }
+  
+  .left {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 30px;
+  }
+  
+  .middle {
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  
+  
+  .middle h4 {
+    font-weight: bold;
+  
+  }
+  
+  .middle p {
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  
+  
+  
+  .mehr_foot {
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .mehr_foot h4 {
+    font-weight: bold;
+    
+  }
+  
+  .mehr_foot a {
+    
+    font-weight: lighter;
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .mehr_foot p {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  
+  
+  .bottom_foot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+  
+  
+  
+  
+  @media screen and (min-width: 1150px ){
+    .footer{
+        flex-direction: row;
+        height: 500px;
+     
+        
+    }
+  
+    .middle {
+        margin-left: 200px;
+       
+    }
+  
+    .left {
+       justify-content: center;
+       margin-top: 0;
+    }
+  
+    .bottom_foot {
+       display: flex;
+       align-items: center;
+    }
+  
+  
+  }
+  
+  @media screen and (min-width: 740px){
+    .bottom_foot{
+        flex-direction: row;
+    }
+  
+    .middle {
+        margin-right: 30px;
+    }
+  
+    .mehr_foot {
+        margin-left: 30px;
+    }
+  }
+  
